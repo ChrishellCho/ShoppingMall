@@ -8,6 +8,7 @@ CREATE TABLE dbo.Users(
  Password varchar(20) NOT NULL,
  UserName nvarchar(25) NOT NULL,
  Introducer varchar(10) ,
+ Postcode int NOT NULL,
  Address varchar(50) NOT NULL,
  )
 
