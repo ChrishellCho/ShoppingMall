@@ -26,6 +26,8 @@ namespace ShoppingMall
 			
 		}
 
+		
+		// ID 중복체크
 		protected void btnIDCheck_Click(object sender, EventArgs e)
 		{
 			string id = txtUserID.Text;
@@ -55,6 +57,7 @@ namespace ShoppingMall
 
 		}
 
+		// ID 길이 확인
 		protected void valUserIDLength_ServerValidate(object source, ServerValidateEventArgs args)
 		{
 			int len = args.Value.Length;
@@ -75,12 +78,14 @@ namespace ShoppingMall
 
 		protected void btnRegister_Click(object sender, EventArgs e)
 		{	
-
+			// ID 중복체크 여부 확인
+			// 체크 안됐을 때
 			if (Global.IdCheck != "checked"){
 				string script = "alert('ID중복체크가 필요합니다.')";
 				Guid guidKey = Guid.NewGuid(); 
 				Page.ClientScript.RegisterStartupScript(typeof(Page), guidKey.ToString(), script, true);
 			}
+			// 체크 되었을 때 DB에 정보 저장
 			else {
 				string strUserID = txtUserID.Text;
 				string strPassword = txtPassword.Text;
