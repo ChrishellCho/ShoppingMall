@@ -51,6 +51,24 @@ namespace ShoppingMall
 		protected global::System.Web.UI.WebControls.CustomValidator valUserIDLength;
 
 		/// <summary>
+		/// btnIDCheck 컨트롤입니다.
+		/// </summary>
+		/// <remarks>
+		/// 자동 생성 필드입니다.
+		/// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Button btnIDCheck;
+
+		/// <summary>
+		/// lblCheckResult 컨트롤입니다.
+		/// </summary>
+		/// <remarks>
+		/// 자동 생성 필드입니다.
+		/// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Label lblCheckResult;
+
+		/// <summary>
 		/// txtPassword 컨트롤입니다.
 		/// </summary>
 		/// <remarks>
@@ -105,6 +123,24 @@ namespace ShoppingMall
 		protected global::System.Web.UI.WebControls.RequiredFieldValidator valUserName;
 
 		/// <summary>
+		/// txtPostcode 컨트롤입니다.
+		/// </summary>
+		/// <remarks>
+		/// 자동 생성 필드입니다.
+		/// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.TextBox txtPostcode;
+
+		/// <summary>
+		/// btnFindPostcode 컨트롤입니다.
+		/// </summary>
+		/// <remarks>
+		/// 자동 생성 필드입니다.
+		/// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Button btnFindPostcode;
+
+		/// <summary>
 		/// txtUserAddress 컨트롤입니다.
 		/// </summary>
 		/// <remarks>
@@ -114,13 +150,13 @@ namespace ShoppingMall
 		protected global::System.Web.UI.WebControls.TextBox txtUserAddress;
 
 		/// <summary>
-		/// valUserAddress 컨트롤입니다.
+		/// txtDetailAddress 컨트롤입니다.
 		/// </summary>
 		/// <remarks>
 		/// 자동 생성 필드입니다.
 		/// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.RequiredFieldValidator valUserAddress;
+		protected global::System.Web.UI.WebControls.TextBox txtDetailAddress;
 
 		/// <summary>
 		/// txtIntroducer 컨트롤입니다.

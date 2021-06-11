@@ -43,4 +43,9 @@ DROP TABLE Pro_Category;
 --상품 테이블
 CREATE TABLE Products
 (
-	
+	ProductID int identity(1,1) not null Primary key,
+	ProductName nvarchar not null,
+	ProductImg image 
+)
+
+SELECT * FROM Products;
