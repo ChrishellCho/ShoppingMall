@@ -17,25 +17,43 @@ namespace ShoppingMall
 	{
 		public static string IdCheck;
 	}
-
+	
 	public partial class Register : System.Web.UI.Page
 	{
-
+		
 		protected void Page_Load(object sender, EventArgs e)
 		{
-
+			
 		}
 
-
+		
 		// ID 중복체크
 		protected void btnIDCheck_Click(object sender, EventArgs e)
 		{
-			string strJs = @"
-			<script language='javascript'>
-			window.open('./CheckID.aspx','','width=400,height=200');
-			</script>";
+			string id = txtUserID.Text;
 
-			Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "checkID", strJs);
+			string connectionString = WebConfigurationManager.ConnectionStrings["ShopDB"].ConnectionString;
+
+			SqlConnection conn = new SqlConnection(connectionString);
+			conn.Open();
+			string IdCheckSql = $@"SELECT COUNT (*) FROM Users WHERE UserID = '{id}'";
+
+			SqlCommand cmd = new SqlCommand(IdCheckSql, conn);
+			int CountResult = (int)cmd.ExecuteScalar();
+
+			Console.WriteLine(CountResult);
+
+			if (CountResult == 1)
+			{
+				lblCheckResult.Text = "이미 존재하는 ID입니다.";
+				txtUserID.Text = "";
+			}
+			else
+			{
+				lblCheckResult.Text = "사용할 수 있는 ID입니다.";
+				Global.IdCheck = "checked";
+			}
+			conn.Close();
 
 		}
 
@@ -56,21 +74,19 @@ namespace ShoppingMall
 		protected void btnCancel_Click(object sender, EventArgs e)
 		{
 			Response.Redirect("Default.aspx");
-		}
+		}	
 
 		protected void btnRegister_Click(object sender, EventArgs e)
-		{
+		{	
 			// ID 중복체크 여부 확인
 			// 체크 안됐을 때
-			if (Global.IdCheck != "checked")
-			{
+			if (Global.IdCheck != "checked"){
 				string script = "alert('ID중복체크가 필요합니다.')";
-				Guid guidKey = Guid.NewGuid();
+				Guid guidKey = Guid.NewGuid(); 
 				Page.ClientScript.RegisterStartupScript(typeof(Page), guidKey.ToString(), script, true);
 			}
 			// 체크 되었을 때 DB에 정보 저장
-			else
-			{
+			else {
 				string strUserID = txtUserID.Text;
 				string strPassword = txtPassword.Text;
 				string strUserName = txtUserName.Text;
@@ -102,7 +118,7 @@ namespace ShoppingMall
 
 				Response.Redirect("Login.aspx");
 			}
-
+			
 		}
 
 	}

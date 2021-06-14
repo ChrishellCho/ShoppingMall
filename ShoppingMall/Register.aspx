@@ -15,12 +15,6 @@
   </style>
 </head>
 <body>
-	<script>
-		function OpenCheckID() {
-			window.open('./CheckID.aspx?txtUserID=<%= txtUserID.ClientID %>', '', 'width=400,height=200');
-			return false;
-		}
-	</script>
 	<form id="form1" runat="server">
 		<div>
 			<h1>회원가입</h1>
@@ -32,7 +26,7 @@
 						<asp:TextBox ID="txtUserID" runat="server"></asp:TextBox>
 						<asp:RequiredFieldValidator ID="valUserID" runat="server" ErrorMessage="ID를 입력하세요" Display="Dynamic" SetFocusOnError="true" ControlToValidate="txtUserID"></asp:RequiredFieldValidator>
 						<asp:CustomValidator ID="valUserIDLength" runat="server" ErrorMessage="ID는 3자 이상 12자 이하로 입력하세요" ControlToValidate="txtUserID" Display="None" SetFocusOnError="True" OnServerValidate="valUserIDLength_ServerValidate"></asp:CustomValidator>
-						<asp:Button ID="btnIDCheck" runat="server" Text="아이디중복체크" OnClick="btnIDCheck_Click" OnClientClick="return OpenCheckID()" />
+						<asp:Button ID="btnIDCheck" runat="server" Text="아이디중복체크" OnClick="btnIDCheck_Click" />
 						<asp:Label ID="lblCheckResult" runat="server" Text=""></asp:Label>
 					</td>
 				</tr>
