@@ -116,3 +116,15 @@ D:\GITHUB\ShoppingMall\ShoppingMall\obj\Debug\ShoppingMall.csproj.CoreCompileInp
 D:\GITHUB\ShoppingMall\ShoppingMall\obj\Debug\ShoppingMall.csproj.CopyComplete
 D:\GITHUB\ShoppingMall\ShoppingMall\obj\Debug\ShoppingMall.dll
 D:\GITHUB\ShoppingMall\ShoppingMall\obj\Debug\ShoppingMall.pdb
+D:\GITHUB\ShoppingMall\Shoppingmall\bin\System.Buffers.dll
+D:\GITHUB\ShoppingMall\Shoppingmall\bin\System.Collections.Immutable.dll
+D:\GITHUB\ShoppingMall\Shoppingmall\bin\System.Memory.dll
+D:\GITHUB\ShoppingMall\Shoppingmall\bin\System.Numerics.Vectors.dll
+D:\GITHUB\ShoppingMall\Shoppingmall\bin\System.Reflection.Metadata.dll
+D:\GITHUB\ShoppingMall\Shoppingmall\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\GITHUB\ShoppingMall\Shoppingmall\bin\System.Buffers.xml
+D:\GITHUB\ShoppingMall\Shoppingmall\bin\System.Collections.Immutable.xml
+D:\GITHUB\ShoppingMall\Shoppingmall\bin\System.Memory.xml
+D:\GITHUB\ShoppingMall\Shoppingmall\bin\System.Numerics.Vectors.xml
+D:\GITHUB\ShoppingMall\Shoppingmall\bin\System.Reflection.Metadata.xml
+D:\GITHUB\ShoppingMall\Shoppingmall\bin\System.Runtime.CompilerServices.Unsafe.xml
