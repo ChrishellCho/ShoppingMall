@@ -8,7 +8,29 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+  <h2>로그인</h2>
+
+  <table>
+    <tr>
+      <td>아이디 :</td>
+      <td>
+        <input type="text" id="txtUserID" placeholder="Enter your ID" />
+      </td>
+    </tr>
+    <tr>
+      <td>비밀번호 :</td>
+      <td>
+					<input id="txtPassword" type="password" placeholder="Enter your Password" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input id="btnLogin" type="button" value="로그인" /></td>
+      <td>
+        <input id="btnCancel" type="button" value="취소" /></td>
+    </tr>
+  </table>
+    <%--<form id="form1" runat="server">
         <div>
           <h1>로그인</h1>
           <table>
@@ -39,6 +61,6 @@
             </tr>
           </table>
         </div>
-    </form>
+    </form>--%>
 </body>
 </html>

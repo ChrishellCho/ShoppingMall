@@ -5,17 +5,55 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	
-	
+
+
 	<title></title>
-	<style type="text/css">
-		.auto-style1 {
-			height: 25px;
-		}
-  </style>
+
 </head>
 <body>
-	<script>
+	
+	<h2>회원가입</h2>
+	<div class="container">
+		<table>
+			<tr>
+				<td>아이디</td>
+				<td>
+					<input id="txtUserID" type="text" placeholder="Enter your ID" /></td>
+			</tr>
+			<tr>
+				<td>비밀번호</td>
+				<td>
+					<input id="txtPassword" type="text" placeholder="Enter your password" /></td>
+			</tr>
+			<tr>
+				<td>비밀번호 확인</td>
+				<td>
+					<input id="txtPasswordConfirm" type="text"  /></td>
+			</tr>
+			<tr>
+				<td>이름</td>
+				<td>
+					<input id="txtUserName" type="text" /></td>
+			</tr>
+			<tr>
+				<td>주소</td>
+				<td>
+					<input type="text" id="sample3_postcode" placeholder="우편번호" />
+					<input type="button" onclick="sample3_execDaumPostcode()" value="우편번호 찾기"/><br/>
+					<input type="text" id="sample3_address" placeholder="주소"/><br/>
+					<input type="text" id="sample3_detailAddress" placeholder="상세주소"/>
+					<input type="text" id="sample3_extraAddress" placeholder="참고항목"/></td>
+			</tr>
+			<tr>
+				<td>추천인</td>
+				<td>
+					<input id="txtIntroducer" type="text"  /></td>
+			</tr>
+		</table>
+		/	
+	</div>
+
+	<%--<script>
 		function OpenCheckID() {
 			window.open('./CheckID.aspx?txtUserID=<%= txtUserID.ClientID %>', '', 'width=400,height=200');
 			return false;
@@ -60,10 +98,10 @@
 				<tr>
 					<td>주소 :</td>
 					<td>
-						<asp:TextBox ID="txtPostcode" runat="server"></asp:TextBox>
-						<asp:Button ID="btnFindPostcode" runat="server" Text="우편번호 찾기" /><br />
-						<asp:TextBox ID="txtUserAddress" runat="server"></asp:TextBox>
-						<asp:TextBox ID="txtDetailAddress" runat="server"></asp:TextBox>
+						<input type="text" id="sample2_postcode" placeholder="우편번호">
+<input type="button" onclick="sample2_execDaumPostcode()" value="우편번호 찾기"><br>
+<input type="text" id="sample2_address" placeholder="주소"><br>
+<input type="text" id="sample2_detailAddress" placeholder="상세주소">
 
 					</td>
 				</tr>
@@ -85,6 +123,6 @@
 				</tr>
 			</table>
 		</div>
-	</form>
+	</form>--%>
 </body>
 </html>
