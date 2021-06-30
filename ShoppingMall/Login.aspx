@@ -25,7 +25,7 @@
     </tr>
     <tr>
       <td>
-        <input id="btnLogin" type="button" value="로그인" /></td>
+        <input id="btnLogin" type="button" value="로그인"  /></td>
       <td>
         <input id="btnCancel" type="button" value="취소" /></td>
     </tr>
