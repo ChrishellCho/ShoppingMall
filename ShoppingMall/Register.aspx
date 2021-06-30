@@ -6,12 +6,12 @@
 <head runat="server">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-
+	<script src="D:\GITHUB\ShoppingMall\ShoppingMall\address.js"></script>
 	<title></title>
 
 </head>
 <body>
-	
+
 	<h2>회원가입</h2>
 	<div class="container">
 		<table>
@@ -28,7 +28,7 @@
 			<tr>
 				<td>비밀번호 확인</td>
 				<td>
-					<input id="txtPasswordConfirm" type="text"  /></td>
+					<input id="txtPasswordConfirm" type="text" /></td>
 			</tr>
 			<tr>
 				<td>이름</td>
@@ -39,18 +39,18 @@
 				<td>주소</td>
 				<td>
 					<input type="text" id="sample3_postcode" placeholder="우편번호" />
-					<input type="button" onclick="sample3_execDaumPostcode()" value="우편번호 찾기"/><br/>
-					<input type="text" id="sample3_address" placeholder="주소"/><br/>
-					<input type="text" id="sample3_detailAddress" placeholder="상세주소"/>
-					<input type="text" id="sample3_extraAddress" placeholder="참고항목"/></td>
+					<input type="button" onclick="sample3_execDaumPostcode()" value="우편번호 찾기" /><br />
+					<input type="text" id="sample3_address" placeholder="주소" /><br />
+					<input type="text" id="sample3_detailAddress" placeholder="상세주소" />
+					<input type="text" id="sample3_extraAddress" placeholder="참고항목" /></td>
 			</tr>
 			<tr>
 				<td>추천인</td>
 				<td>
-					<input id="txtIntroducer" type="text"  /></td>
+					<input id="txtIntroducer" type="text" /></td>
 			</tr>
 		</table>
-		/	
+
 	</div>
 
 	<%--<script>
